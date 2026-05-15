@@ -1,0 +1,170 @@
+GET http://localhost:5000/api/v1/health
+
+###
+
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@rugorigaz.bi",
+    "password": "Admin123!"
+}
+
+###
+
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "marie.client@rugorigaz.bi",
+    "password": "Admin123!"
+}
+
+###
+
+GET http://localhost:5000/api/v1/admin/dashboard/stats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODM1MDc0MiwiZXhwIjoxNzc4MzUxNjQyfQ.AqYyzn7dndZkiM7_dCN6KCfQdmHEdYzavfiLJpORIAk
+
+###
+
+GET http://localhost:5000/api/v1/users/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODM1MTg1NywiZXhwIjoxNzc4MzUyNzU3fQ.Z2Vp7TArt2tiHar6uodBEodZXOfK99MsIoCvR3gFbjA
+
+###
+
+GET http://localhost:5000/api/v1/users/stats
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODM1MTg1NywiZXhwIjoxNzc4MzUyNzU3fQ.Z2Vp7TArt2tiHar6uodBEodZXOfK99MsIoCvR3gFbjA
+
+###
+
+GET http://localhost:5000/api/v1/users/livreurs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODYyNzg5NSwiZXhwIjoxNzc4NzE0Mjk1fQ.8T1Q01vMGLqPAY3-eSAi3XCFkCI_QckzAlXR_1phmk4
+
+###
+
+GET http://localhost:5000/api/v1/products/categories/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODM1MDc0MiwiZXhwIjoxNzc4MzUxNjQyfQ.AqYyzn7dndZkiM7_dCN6KCfQdmHEdYzavfiLJpORIAk
+
+###
+
+POST http://localhost:5000/api/v1/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInV1aWQiOiJhYzhmYzNiZi0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6Im1hcmllLmNsaWVudEBydWdvcmlnYXouYmkiLCJyb2xlIjoiY2xpZW50IiwiaWF0IjoxNzc4NDE2NTgyLCJleHAiOjE3Nzg0MTc0ODJ9.wRwRh1sUffAjW_gRRbBJogLYtiQYFV_bxcf3KbiPs54
+
+{
+    "delivery_address": "Avenue Mwambutsa,  Quartier Ngagara, Bujumbura",
+    "delivery_notes": "Appeler 30 minutes avant la livraison. Sonner à la l'interphone",
+    "recipient_name": "Mary Nahimana",
+    "recipient_phone": "+25762345678",
+    "items": [
+        {
+            "product_id": 3,
+            "quantity": 1
+        },
+        {
+            "product_id": 2,
+            "quantity": 1
+        }
+    ]
+}
+
+###
+
+GET http://localhost:5000/api/v1/orders/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxODIyNCwiZXhwIjoxNzc4NTA0NjI0fQ.wG1RWpvFYUi88wtCDRJVp946kwbNsxXlYP9rF9HHFtM
+
+###
+
+POST http://localhost:5000/api/v1/orders/16/cancel
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInV1aWQiOiJhYzhmYzNiZi0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6Im1hcmllLmNsaWVudEBydWdvcmlnYXouYmkiLCJyb2xlIjoiY2xpZW50IiwiaWF0IjoxNzc4NDE2NTgyLCJleHAiOjE3Nzg0MTc0ODJ9.wRwRh1sUffAjW_gRRbBJogLYtiQYFV_bxcf3KbiPs54
+
+{
+    "reason": "Info not complete for delivery"
+}
+###
+
+PATCH http://localhost:5000/api/v1/orders/14/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxNzI3OSwiZXhwIjoxNzc4NTAzNjc5fQ.i_VTS704jr_mhS4OSPMsh069c4igvgG2ghEsiRNxf4w
+
+{
+    "status": "pending_payment"
+}
+###
+
+GET http://localhost:5000/api/v1/orders/my-orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInV1aWQiOiJhYzhmYzNiZi0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6Im1hcmllLmNsaWVudEBydWdvcmlnYXouYmkiLCJyb2xlIjoiY2xpZW50IiwiaWF0IjoxNzc4NDQ3NjY0LCJleHAiOjE3Nzg1MzQwNjR9.PQUvJUf3LpQceyv84w0YaZO835RpfkMHJzTXL5ktDrI
+
+###
+
+GET http://localhost:5000/api/v1/orders/stats/summary
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxNzI3OSwiZXhwIjoxNzc4NTAzNjc5fQ.i_VTS704jr_mhS4OSPMsh069c4igvgG2ghEsiRNxf4w
+
+###
+
+GET http://localhost:5000/api/v1/deliveries/available
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInV1aWQiOiJhYzc1NThiZS0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImxpdnJldXJAcnVnb3JpZ2F6LmJpIiwicm9sZSI6ImxpdnJldXIiLCJpYXQiOjE3Nzg0MTc0ODEsImV4cCI6MTc3ODUwMzg4MX0.TwxWoBrCZpFTWTVGR2B6fET99cGDeBvQfWStwj-m_vo
+
+###
+
+PATCH http://localhost:5000/api/v1/deliveries/availability
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInV1aWQiOm51bGwsImVtYWlsIjoia2FtYW5hdXJiYWluMUBydWdvcmlnYXouYmkiLCJyb2xlIjoibGl2cmV1ciIsImlhdCI6MTc3ODQxNzU2NywiZXhwIjoxNzc4NTAzOTY3fQ.jaunW08EF_onurrJm4EkozC282fnrDAeY9llsOdlzBg
+
+{
+    "is_available": true
+}
+
+###
+
+GET http://localhost:5000/api/v1/deliveries/my-active
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInV1aWQiOiJhYzc1NThiZS0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImxpdnJldXJAcnVnb3JpZ2F6LmJpIiwicm9sZSI6ImxpdnJldXIiLCJpYXQiOjE3Nzg0MTc0ODEsImV4cCI6MTc3ODUwMzg4MX0.TwxWoBrCZpFTWTVGR2B6fET99cGDeBvQfWStwj-m_vo
+
+###
+
+GET http://localhost:5000/api/v1/deliveries/my-history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInV1aWQiOiJhYzc1NThiZS0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImxpdnJldXJAcnVnb3JpZ2F6LmJpIiwicm9sZSI6ImxpdnJldXIiLCJpYXQiOjE3Nzg0MTc0ODEsImV4cCI6MTc3ODUwMzg4MX0.TwxWoBrCZpFTWTVGR2B6fET99cGDeBvQfWStwj-m_vo
+
+###
+
+POST http://localhost:5000/api/v1/deliveries/assign/16
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInV1aWQiOm51bGwsImVtYWlsIjoia2FtYW5hdXJiYWluMUBydWdvcmlnYXouYmkiLCJyb2xlIjoibGl2cmV1ciIsImlhdCI6MTc3ODQxNzU2NywiZXhwIjoxNzc4NTAzOTY3fQ.jaunW08EF_onurrJm4EkozC282fnrDAeY9llsOdlzBg
+
+###
+
+GET http://localhost:5000/api/v1/deliveries/16/qrcode
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInV1aWQiOm51bGwsImVtYWlsIjoia2FtYW5hdXJiYWluMUBydWdvcmlnYXouYmkiLCJyb2xlIjoibGl2cmV1ciIsImlhdCI6MTc3ODQxNzU2NywiZXhwIjoxNzc4NTAzOTY3fQ.jaunW08EF_onurrJm4EkozC282fnrDAeY9llsOdlzBg
+
+###
+
+POST http://localhost:5000/api/v1/deliveries/16/issue
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksInV1aWQiOm51bGwsImVtYWlsIjoia2FtYW5hdXJiYWluMUBydWdvcmlnYXouYmkiLCJyb2xlIjoibGl2cmV1ciIsImlhdCI6MTc3ODQxNzU2NywiZXhwIjoxNzc4NTAzOTY3fQ.jaunW08EF_onurrJm4EkozC282fnrDAeY9llsOdlzBg
+
+{
+    "issue": "the road is in bad conditions"
+}
+
+###
+
+GET http://localhost:5000/api/v1/payments/order/14/proof
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxODIyNCwiZXhwIjoxNzc4NTA0NjI0fQ.wG1RWpvFYUi88wtCDRJVp946kwbNsxXlYP9rF9HHFtM
+
+###
+
+PATCH http://localhost:5000/api/v1/payments/1/validate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxODIyNCwiZXhwIjoxNzc4NTA0NjI0fQ.wG1RWpvFYUi88wtCDRJVp946kwbNsxXlYP9rF9HHFtM
+
+{
+    "decision": "approve",
+    "comment": "Payment of the product is correct"
+}
+
+###
+
+GET http://localhost:5000/api/v1/payments/pending
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInV1aWQiOiJhYzM5MzlmNC0zNTlhLTExZjEtYjFhYS03NDQ2YTAzYWMxOTEiLCJlbWFpbCI6ImFkbWluQHJ1Z29yaWdhei5iaSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3ODQxODIyNCwiZXhwIjoxNzc4NTA0NjI0fQ.wG1RWpvFYUi88wtCDRJVp946kwbNsxXlYP9rF9HHFtM

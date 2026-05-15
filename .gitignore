@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+# Dépendances
+node_modules/
+package-lock.json
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Logs
+=======
+# Node modules
+
+node_modules/
+
+# Logs
+
+>>>>>>> 6d9893ea03647f4bd80ea1e79fd0e5b77eed4b56
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+<<<<<<< HEAD
+
+# Uploads
+uploads/
+!uploads/.gitkeep
+
+# IDE
+=======
+pnpm-debug.log*
+
+# Runtime data
+
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage (tests)
+
+coverage/
+
+# Build / production
+
+dist/
+build/
+
+# Environment variables
+
+.env
+.env.*
+!.env.example
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+
+>>>>>>> 6d9893ea03647f4bd80ea1e79fd0e5b77eed4b56
+.vscode/
+.idea/
+*.swp
+*.swo
+<<<<<<< HEAD
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+coverage/
+.nyc_output/
+
+# Build
+dist/
+build/
+
+# Certificats
+*.pem
+*.key
+*.crt
+=======
+
+# Optional npm cache
+
+.npm/
+
+# Optional eslint cache
+
+.eslintcache
+
+# Parcel / Vite / Next / Nuxt (si utilisés)
+
+.cache/
+.next/
+.nuxt/
+out/
+
+# TypeScript
+
+*.tsbuildinfo
+
+# Temporary files
+
+tmp/
+temp/
+>>>>>>> 6d9893ea03647f4bd80ea1e79fd0e5b77eed4b56
